@@ -1,1 +1,2 @@
-/Videos/
+**/Videos/
+**/__pycache__/
