@@ -3,6 +3,7 @@ import json
 import dicts
 import mahjong_pool as mp
 
+
 def convert(SID : int, GID : int, players = ["gy", "wk", "tb", "cc"]):
     folder_name = f"Split Records/S{SID}_G{GID}/"
     for player_idx, player_name in enumerate(players):
@@ -146,7 +147,8 @@ def convert(SID : int, GID : int, players = ["gy", "wk", "tb", "cc"]):
 
             def parse_nagashi(nagashi):
                 if "<" in nagashi:
-                    return "流局", [nagashi.replace("<", "").split(",")]
+                    tenpai_mono = nagashi.replace("<", "").split(",")
+                    return "流局", [sorted(tenpai_mono)]
                 if ">" in nagashi:
                     houjuu_mono, agari_mono = nagashi.split(">")
                     return "和了", [agari_mono, houjuu_mono]
