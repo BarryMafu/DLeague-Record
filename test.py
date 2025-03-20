@@ -9,7 +9,7 @@ GID = 9
 
 traversal = False
 
-opts, args = getopt.getopt(sys.argv[1:], "s:g:", "traversal")
+opts, args = getopt.getopt(sys.argv[1:], "s:g:", ["traversal", "empty"])
 for opt, arg in opts:
     if opt == "-s":
         SID = int(arg)
@@ -31,7 +31,9 @@ if not traversal:
 
 
 url = "https://tenhou.net/6/#json="
-# url = ""
+for opt, _ in opts:
+    if opt == "--empty": url = ""
+    
 file_name = f"Final/S{SID}_G{GID}.json"
 with open(file_name, 'r', encoding='utf-8') as file:
     json_data = json.load(file)
