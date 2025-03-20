@@ -5,7 +5,7 @@ import pyperclip
 
 # TODO: SID and GID here
 SID = 3
-GID = 7
+GID = 9
 
 def open_browser():
     file_name = f"Final/S{SID}_G{GID}.json"
