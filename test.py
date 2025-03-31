@@ -5,7 +5,7 @@ import getopt
 import sys
 
 SID = 3
-GID = 9
+GID = 7
 
 traversal = False
 
