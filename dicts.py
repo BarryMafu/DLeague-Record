@@ -219,6 +219,9 @@ name_to_hash = {
 }
 
 def calc_hansu(yaku):
+    if yaku not in yaku_dict:
+        raise ValueError(f"役名不可解析，役：{yaku}")
+    
     if "," in yaku:
         return int(yaku.split(",")[1])
     elif yaku in yaku_to_num_dict:
