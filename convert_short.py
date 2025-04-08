@@ -151,4 +151,3 @@ def convert_short(sid, gid, create_json, create_template, verbose, start_point =
 
 if __name__ == "__main__":
     convert_short(SID, GID, False, False, True)
-    print("转换完成")
