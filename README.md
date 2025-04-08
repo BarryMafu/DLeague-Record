@@ -21,7 +21,11 @@ pip install <name>  或者   conda install <name>
 
 我们统一使用这样的称呼：
 
-- [**scop 表**] score & operation
+- [**scop 表**] score & operation 表，也是gy仓库统计使用的json表项。
+- [**tex 牌谱**] 使用.tex后缀的手工录入牌谱，可读性好。
+- [**json 个人牌谱**] 使用.json后缀的个人牌谱，由tex牌谱通过`convert.py`转换得到。
+- [**json 总牌谱**] 使用.json后缀的总牌谱，由四个json个人牌谱通过`merge.py`转换得到。
+- [**short 牌谱**] 使用.short后缀的牌谱，用于记录最小化信息，可以生成模板和scop表。
 
 ### 使用 .short 文件快速生成 scop 表和 tex 牌谱模板
 .short 文件是一种包含支持生成 scop 表最小信息的文件，并且和 tex 牌谱语法类似，学习成本较低。同时，这种文件还可以指导生成 tex 牌谱。
