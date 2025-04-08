@@ -1,24 +1,36 @@
 cc, gy, tb, wk
+Rcc
 wk > cc 
 lz ; u # 40 
 cc < 
 wk > cc 
 dy ; a # 30 
+Rtb
+Rgy
 gy , tb < 
+Rcc
+Rtb
 > tb 
 lz ; zm ; sanak ; a , 2 ; dy ; u # 40
+Rcc
 cc < 
 > tb 
-zm ; ph ; a # 20
+zm ; ph ; a # 20 
+Rcc
+Rwk
 cc , wk <
 wk > cc 
 dy # 30 
 > tb 
 5z ; d , 3 # 40
+Rcc
 gy > tb 
 qdz ; d , 2 # 25 
+Rcc
 cc , gy <
 > wk 
 5z ; a # 30
+Rgy
+Rwk
 cc > gy 
 lz ; 3z # 40
